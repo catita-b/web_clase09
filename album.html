@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Portafolio de Anna Schaefers - Film, Photography and Animation" />
+        <title>Mi Portafolio con Bootstrap</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <meta name="theme-color" content="#712cf9" />
+        <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+            .b-example-divider {
+                width: 100%;
+                height: 3rem;
+                background-color: #0000001a;
+                border: solid rgba(0, 0, 0, 0.15);
+                border-width: 1px 0;
+                box-shadow: inset 0 0.5em 1.5em #0000001a, inset 0 0.125em 0.5em #00000026;
+            }
+            .nav-scroller {
+                position: relative;
+                z-index: 2;
+                height: 2.75rem;
+                overflow-y: hidden;
+            }
+            .nav-scroller .nav {
+                display: flex;
+                flex-wrap: nowrap;
+                padding-bottom: 1rem;
+                margin-top: -1px;
+                overflow-x: auto;
+                text-align: center;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+            .btn-bd-primary {
+                --bd-violet-bg: #712cf9;
+                --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+                --bs-btn-font-weight: 600;
+                --bs-btn-color: var(--bs-white);
+                --bs-btn-bg: var(--bd-violet-bg);
+                --bs-btn-border-color: var(--bd-violet-bg);
+                --bs-btn-hover-color: var(--bs-white);
+                --bs-btn-hover-bg: #6528e0;
+                --bs-btn-hover-border-color: #6528e0;
+                --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+                --bs-btn-active-color: var(--bs-btn-hover-color);
+                --bs-btn-active-bg: #5a23c8;
+                --bs-btn-active-border-color: #5a23c8;
+            }
+            .card-img-top {
+                height: 300px;
+                object-fit: cover;
+            }
+            .date-badge {
+                background: #1E1E1E;
+                color: white;
+                padding: 0.25rem 0.5rem;
+                border-radius: 0.25rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="collapse text-bg-dark" id="navbarHeader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-7 py-4">
+                            <h4>Hola!</h4>
+                            <p class="text-body-secondary"> Soy Catalina Bustos estudiante de Diseño UC</p>
+                        </div>
+                        <div class="col-sm-4 offset-md-1 py-4">
+                            <h4>Contacto</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="https://www.behance.net/catalinbustosj" target="_blank" class="text-white">Bahance</a></li>
+                                <li><a href="https://www.linkedin.com/in/catalina-bustos-jara-680b91311/" target="_blank" class="text-white">LinkedIn</a></li>
+                                <li><a href="mailto:catitabustos2003@gmail.com" class="text-white">Email</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-dark bg-dark shadow-sm">
+                <div class="container">
+                    <!--<a href="#" class="navbar-brand d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24">
+                            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                            <circle cx="12" cy="13" r="4"></circle>
+                        </svg>
+                        <strong>Catalina Bustos</strong>
+                    </a>-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="py-5 text-center container">
+                <div class="row py-lg-5">
+                    <div class="col-lg-6 col-md-8 mx-auto">
+                        <h1 class="fw-light">Catalina Bustos</h1>
+                        <p class="lead text-body-secondary">
+                            Portafolio de trabajos en la carrerra de Diseño UC.
+                        </p>
+                        <p>
+                            <a href="#" class="btn btn-primary my-2">Portafolio</a> 
+                            <a href="#" class="btn btn-secondary my-2">Sobre mi</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <div class="album py-5 bg-body-tertiary">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="porotito"></div>
+                </div>
+            </div>
+        </main>
+        <footer class="text-body-secondary py-5">
+            <div class="container">
+                <p class="float-end mb-1"><a href="#">Back to top</a></p>
+                <p class="mb-1">&copy; Catalina Bustos 2025</p>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        
+        <script>
+            const trabajos = [
+                {
+                    title: "Mundo tattoo",
+                    date: "Editorial",
+                    photo: "img/p-tattoo.png",
+                    description: "Álbum Colexionable",
+                    category: "2023 - 1"
+                },
+                {
+                    title: "Moleta",
+                    date: "Modelado en 3D",
+                    photo: "img/p-moleta.png",
+                    description: "Moledor de Cannabis",
+                    category: "2023 - 1"
+                },
+                {
+                    title: "¡Yo soy Cheff Nestrlé Saludable!",
+                    date: "Diseño de Experiencia",
+                    photo: "img/p-chef.png",
+                    description: "Colaboración con Nestlé",
+                    category: "2023 - 2"
+                },
+                {
+                    title: "Comalú",
+                    date: "Modelado en 3D",
+                    photo: "img/p-perro.png",
+                    description: "Producto para Mascotas",
+                    category: "2024 - 1"
+                },
+                {
+                    title: "Edición Especial Pisco Doña Josefa",
+                    date: "Packaging",
+                    photo: "img/p-pisco.png",
+                    description: "Experiancia de Maridaje",
+                    category: "2024 - 1"
+                },
+                {
+                    title: "Kolumna Oczu",
+                    date: "Industrial",
+                    photo: "img/p-oczu.png",
+                    description: "Mobiliario-iluminaria",
+                    category: "2024 - 2"
+                },
+                {
+                    title: "OpenDay",
+                    date: "Ilustración",
+                    photo: "img/p-open.png",
+                    description: "Afiche promocional",
+                    category: "2024 - 2"
+                },
+                {
+                    title: "ViñaMar",
+                    date: "Packaging",
+                    photo: "img/p-caja.png",
+                    description: "Caja de Marca",
+                    category: "2025 - 1"
+                },
+                {
+                    title: "¡Marcianos en Apuros!",
+                    date: "Ilustración",
+                    photo: "img/p-marcianos1.png",
+                    description: "Juego de Mesa",
+                    category: "2025 - 1"
+                }
+            ];
+
+            const portafolio = document.querySelector("#porotito");
+            
+            trabajos.forEach((v) => {
+                portafolio.innerHTML += `
+                    <div class="col">
+                        <div class="card shadow-sm h-100">
+                            <img src="${v.photo}" class="card-img-top" alt="${v.title}">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">${v.title}</h5>
+                                <p class=" flex-grow-1">${v.description}</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">${v.category}</button>
+                                    </div>
+                                    <span class="date-badge">${v.date}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+        </script>
+    </body>
+</html>
